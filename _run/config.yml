@@ -1,0 +1,74 @@
+# =============================================================================
+#  DELUGE pipeline paths
+#  All scripts read their paths from this file via _run/paths.py.
+#  Edit these values to point at your local data — do NOT change paths in the
+#  individual scripts.
+# =============================================================================
+
+# -- Repository / data roots --------------------------------------------------
+repo_root: /home/ok2907/Documents/Deluge/github_library
+data_root: /home/ok2907/Documents/Data
+
+# -- HydroSHEDS ---------------------------------------------------------------
+hydrosheds_zip_dir:    /home/ok2907/Documents/Data/HydroSheds/Lvl9_Continents
+hydrosheds_lvl9_gpkg:  /home/ok2907/Documents/Data/HydroSheds/Lvl9_Global/hybas_global_lvl9.gpkg
+hydrosheds_lvl6_gpkg:  /home/ok2907/Documents/Data/HydroSheds/Lvl6_Global/hybas_global_lvl6.gpkg
+hydrolakes_gdb:        /home/ok2907/Documents/Data/HydroSheds/HydroLAKES_polys_v10.gdb
+
+# -- HAND / MeritHydro --------------------------------------------------------
+hand_tif:              /home/ok2907/Documents/Data/MeritHydro/hand_global.tif
+hand_download_dir:     /home/ok2907/Documents/Data/MeritHydro          # cwd for download script
+hand_tiles_dir:        hand_tiles                                       # relative to hand_download_dir
+hand_output_file:      hand_global.tif                                  # relative to hand_download_dir
+gee_image:             users/gena/GlobalHAND/90m-global/hand-1000
+gee_project:           deluge-488514
+
+# -- GFD ----------------------------------------------------------------------
+gfd_root:                 /home/ok2907/Documents/Data/GlobalFloodDatabase
+gfd_zip_dir:              /home/ok2907/Documents/Data/GlobalFloodDatabase/download/gfd_v1_4
+gfd_tif_dir:              /home/ok2907/Documents/Data/GlobalFloodDatabase/tif
+gfd_metadata_dir:         /home/ok2907/Documents/Data/GlobalFloodDatabase/metadata
+gfd_inundated_tif_dir:    /home/ok2907/Documents/Data/GlobalFloodDatabase/tif_inundated
+
+# -- UNOSAT -------------------------------------------------------------------
+unosat_root:           /home/ok2907/Documents/Data/UNOSAT                              # cwd for download script
+unosat_events_json:    unosat_floodevents_webmap.txt                                    # relative to unosat_root
+unosat_shp_dir:        shapefiles                                                        # relative
+unosat_gpkg_dir_rel:   geopackage                                                        # relative to unosat_root (download)
+unosat_meta_dir_rel:   metadata                                                          # relative to unosat_root (download)
+unosat_gpkg_dir:       /home/ok2907/Documents/Data/UNOSAT/geopackage                    # absolute (linker / checker)
+
+# -- WorldFloods --------------------------------------------------------------
+worldfloods_geojson_dir:  /home/ok2907/Documents/Data/WorldFloods/Lvl9_Classification/floodmaps
+worldfloods_metadata_dir: /home/ok2907/Documents/Data/WorldFloods/Lvl9_Classification/metadata
+
+# -- GRDC ---------------------------------------------------------------------
+grdc_shp: "/home/ok2907/Documents/Data/GRDC/GRDC_Watersheds_shp/2025-02-11 13-54-59.shp"
+
+# -- CARAVAN ------------------------------------------------------------------
+caravan_shapefiles_dir: /home/ok2907/Documents/Data/Caravan/Caravan-nc/shapefiles
+caravan_nc_dir:         /home/ok2907/Documents/Data/Caravan/Caravan-nc/timeseries/netcdf
+caravan_hres_zarr:      /home/ok2907/Documents/Data/Caravan/HRES/timeseries.zarr
+
+# -- ERA5-Land ----------------------------------------------------------------
+era5land_root:       /home/ok2907/Documents/Data/ERA5Land
+era5land_daily_zarr: /home/ok2907/Documents/Data/ERA5Land/ERA5Land_daily/ERA5Land_daily.zarr
+
+# -- DELUGE — preprocess outputs (per-event) ---------------------------------
+deluge_preproc_dir:     /home/ok2907/Documents/Data/DELUGE_TEST/preprocess/A_Spatial
+deluge_attributes_dir:  /home/ok2907/Documents/Data/DELUGE_TEST/preprocess/A_Spatial/attributes
+deluge_ee_subsets_dir:  /home/ok2907/Documents/Data/DELUGE_TEST/preprocess/A_Spatial/earthengine_subsets
+
+# -- DELUGE — spatial outputs (combined) -------------------------------------
+deluge_spatial_dir:            /home/ok2907/Documents/Data/DELUGE_TEST/A_Spatial
+deluge_basins_geoparquet:      /home/ok2907/Documents/Data/DELUGE_TEST/A_Spatial/basins.geoparquet
+deluge_inundation_geoparquet:  /home/ok2907/Documents/Data/DELUGE_TEST/A_Spatial/inundation.geoparquet
+deluge_attributes_csv:         /home/ok2907/Documents/Data/DELUGE_TEST/A_Spatial/attributes.csv
+
+# -- DELUGE — timeseries outputs ---------------------------------------------
+deluge_timeseries_dir:    /home/ok2907/Documents/Data/DELUGE_TEST/B_Timeseries
+deluge_meteorology_zarr:  /home/ok2907/Documents/Data/DELUGE_TEST/B_Timeseries/meteorology.zarr
+deluge_streamflow_zarr:   /home/ok2907/Documents/Data/DELUGE_TEST/B_Timeseries/streamflow.zarr
+
+# -- Validation output --------------------------------------------------------
+validation_output_dir: /home/ok2907/Documents/Deluge/github_library/outputs/validation

@@ -1,0 +1,15 @@
+variable,n_basins,median_rmse,median_pbias,mean_pbias,median_n_days
+10m_u_component_of_wind,28,0.14,0.0,-0.7,9130
+10m_v_component_of_wind,28,0.17,-2.52,4.38,9130
+2m_dewpoint_temperature,28,0.34,0.06,-0.07,9130
+2m_temperature,28,0.27,-0.06,-0.12,9130
+potential_evaporation,28,0.0,-0.06,-0.05,9130
+snow_depth_water_equivalent,28,0.0,0.0,0.84,9130
+surface_net_solar_radiation,28,0.19,0.0,-0.01,9130
+surface_net_thermal_radiation,28,0.97,0.02,0.02,9130
+surface_pressure,28,0.04,-0.02,-0.01,9130
+total_precipitation,28,1.0,-0.06,-0.06,9130
+volumetric_soil_water_layer_1,28,0.0,-0.04,-0.08,9130
+volumetric_soil_water_layer_2,28,0.0,-0.02,-0.04,9130
+volumetric_soil_water_layer_3,28,0.0,-0.01,-0.0,9130
+volumetric_soil_water_layer_4,28,0.0,-0.02,-0.01,9130
