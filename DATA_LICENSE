@@ -1,0 +1,50 @@
+DELUGE Dataset License
+======================
+
+The DELUGE dataset and derived outputs (including but not limited to the
+files in `outputs/`, and any generated `basins.geoparquet`,
+`inundation.geoparquet`, `meteorology.zarr`, `streamflow.zarr`, and
+`attributes.csv`) are licensed under the
+
+    Creative Commons Attribution 4.0 International License (CC BY 4.0)
+
+You are free to:
+
+  * Share  — copy and redistribute the material in any medium or format
+  * Adapt  — remix, transform, and build upon the material for any purpose,
+             even commercially.
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+Suggested citation
+------------------
+Konold, O. (2026). DELUGE: Dataset for Event Linked Ungauged and Gauged
+Environments. https://github.com/conestone/deluge
+
+
+Third-party data
+----------------
+DELUGE is built from multiple upstream sources, each governed by its own
+license and citation requirements. Users of DELUGE must comply with the
+terms of the underlying datasets in addition to CC BY 4.0:
+
+  * Global Flood Database (GFD)  — see https://global-flood-database.cloudtostreet.info/
+  * UNOSAT flood products        — see https://unosat.org/
+  * WorldFloods / ml4floods      — see https://github.com/spaceml-org/ml4floods
+  * ERA5-Land (Copernicus/ECMWF) — see https://cds.climate.copernicus.eu/
+  * CARAVAN                      — see https://github.com/kratzert/Caravan
+  * HydroSHEDS / HydroBASINS     — see https://www.hydrosheds.org/
+  * HydroATLAS                   — see https://www.hydrosheds.org/hydroatlas
+  * GRDC                         — see https://www.bafg.de/GRDC/
+
+Please cite the original providers when using DELUGE in research or products.
+
+Copyright (c) 2026 Oliver Konold

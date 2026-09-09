@@ -132,12 +132,10 @@ Run once per source. Requires external credentials/auth (see script headers).
 
 ### 5 &middot; Validation &nbsp;`code/validation/`
 
-| # | Script | Purpose |
-|---|--------|---------|
-| 1 | `combine_basins_val.py` | Schema / consistency checks on `basins.geoparquet` |
-| 2 | `combine_inundation_val.py` | Schema / consistency checks on `inundation.geoparquet` |
-| 3 | `caravan_basins_iou_val.py` | Report CARAVAN &harr; HYBAS matches by IoU |
-| 4 | `meteorology_val.py` | Compare DELUGE meteorology to CARAVAN reference |
+1. **`combine_basins_val.py`** &mdash; schema / consistency checks on `basins.geoparquet`.
+2. **`combine_inundation_val.py`** &mdash; schema / consistency checks on `inundation.geoparquet`.
+3. **`caravan_basins_iou_val.py`** &mdash; report CARAVAN &harr; HYBAS matches by IoU.
+4. **`meteorology_val.py`** &mdash; compare DELUGE meteorology to CARAVAN reference.
 
 ---
 
@@ -153,3 +151,16 @@ Run once per source. Requires external credentials/auth (see script headers).
 
 See `_run/usage_notes.ipynb` for a worked example of loading and querying these
 outputs.
+
+---
+
+## License
+
+* **Code** &mdash; released under the [MIT License](LICENSE).
+* **Data & derived outputs** &mdash; released under [CC BY 4.0](DATA_LICENSE). Third-party datasets used to build DELUGE remain under their original licenses; see `DATA_LICENSE` for details.
+
+---
+
+<p align="center">
+  <sub>Copyright &copy; 2026 Oliver Konold</sub>
+</p>
